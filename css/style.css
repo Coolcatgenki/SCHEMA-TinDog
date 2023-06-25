@@ -1,0 +1,116 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #4cfcff, #efb572);
+  background-size: 200% 200%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+body{
+  margin: 0;
+  padding: 0;
+  position:relative;
+  min-height:100vh;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 600px; /* Set same as footer's height */
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+.iphone{
+  width:200px;
+  padding-left: 100px;
+  margin-right: 300px;
+  @media only screen and (max-width: 576px){
+    margin-right:350px;
+  }
+  @media only screen and (max-width: 1200px){
+    margin-right:350px;
+  }
+}
+.inicio{
+  display:flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px 0 50px 0;
+}
+.titulo{
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  padding-left: 30px;
+  align-content: center;
+}
+.oracion-titulo{
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 40px;
+}
+.icono{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 0.75rem;
+}
+.caracteristicas{
+  display: flex;
+  gap: 10px;
+}
+.doggy{
+  border-radius: 100%;
+  margin: 5px 0 2px 0;
+}
+#testimonial{
+  text-align: center;
+  padding: 40px 0 100px 0;
+}
+.branchh{
+  @media only screen and (max-width: 700px){
+    gap: 80px;
+  }
+}
+#footer{
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 80px 0 80px 0;
+}
+.copy{
+  display: flex;
+  justify-content: center;
+}
+.sectionn{
+  display: flex;
+  justify-content: center;
+  font-size: small;
+}
+.section-begin{
+  gap:20px
+}
